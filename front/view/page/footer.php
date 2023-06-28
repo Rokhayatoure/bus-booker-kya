@@ -70,5 +70,5 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						</p>											
 					</div>
 				</div>
-				<img class="footer-bottom" src="img/footer-bottom.png" alt="">
+				<img class="footer-bottom" src="asset/img/footer-bottom.png" alt="">
 			</footer>	

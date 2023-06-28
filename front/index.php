@@ -21,7 +21,7 @@
 			<!-- End services Area -->
 			
 			<!-- Start image-gallery Area -->
-			<?php include ('./page/image.php') ?>
+			<?php include ('./view/page/image.php') ?>
 			<!-- End image-gallery Area -->
 			
 			<!-- Start reviews Area -->

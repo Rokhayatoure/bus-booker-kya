@@ -2,7 +2,7 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 about-left">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
+							<img class="img-fluid" src="asset/img/about-img.jpg" alt="">
 						</div>
 						<div class="col-lg-6 about-right">
 							<h1>Globally Connected
