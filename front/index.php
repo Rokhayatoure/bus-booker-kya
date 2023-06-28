@@ -1,23 +1,23 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
-     <?php include ('./page/head.php') ?>
+     <?php include ('./view/page/head.php') ?>
 		</head>
 		<body>	
 			  <header id="header">
-			  <?php include ('./page/header.php') ?>
+			  <?php include ('./view/page/header.php') ?>
 			  </header><!-- #header -->
 
 			<!-- start banner Area -->
-			<?php include ('./page/banner.php') ?>
+			<?php include ('./view/page/banner.php') ?>
 			<!-- End banner Area -->	
 
 			<!-- Start home-about Area -->
-			<?php include ('./page/home_about.php') ?>
+			<?php include ('./view/page/home_about.php') ?>
 			<!-- End home-about Area -->
 			
 			<!-- Start services Area -->
-			<?php include ('./page/service.php') ?>
+			<?php include ('./view/page/service.php') ?>
 			<!-- End services Area -->
 			
 			<!-- Start image-gallery Area -->
@@ -25,21 +25,21 @@
 			<!-- End image-gallery Area -->
 			
 			<!-- Start reviews Area -->
-			<?php include ('./page/reviews.php') ?>
+			<?php include ('./view/page/reviews.php') ?>
 			<!-- End reviews Area -->
 							
 			<!-- Start home-calltoaction Area -->
-			<?php include ('./page/home_calltoation.php') ?>
+			<?php include ('./view/page/home_calltoation.php') ?>
 			<!-- End home-calltoaction Area -->
 			
 			<!-- Start latest-blog Area -->
-			<?php include ('./page/latest_blog.php') ?>
+			<?php include ('./view/page/latest_blog.php') ?>
 			<!-- End latest-blog Area -->
 			
 			<!-- start footer Area -->		
-			<?php include ('./page/footer.php') ?>
+			<?php include ('./view/page/footer.php') ?>
 			<!-- End footer Area -->	
-			<?php include ('./page/js.php') ?>
+			<?php include ('./view/page/js.php') ?>
 			
 		</body>
 	</html>

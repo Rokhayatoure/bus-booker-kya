@@ -29,7 +29,7 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
         <!-- Menu -->
-        <?php include('./Pages/head.php');?>
+        <?php include('./VIEW/Pages/head.php');?>
       
         <!-- / Menu -->
 
@@ -37,19 +37,19 @@
         <div class="layout-page">
           <!-- Navbar -->
 
-          <?php include('./Pages/navbar.php');?>
+          <?php include('./VIEW/Pages/navbar.php');?>
 
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
-            <?php include('./Pages/content.php');?>
+            <?php include('./VIEW/Pages/content.php');?>
           
             <!-- / Content -->
 
             <!-- Footer -->
-            <?php include('./Pages/footer.php');?>
+            <?php include('./VIEW/Pages/footer.php');?>
             <!-- / Footer -->
 
             <div class="content-backdrop fade"></div>
@@ -74,6 +74,6 @@
     </div>
 
     <!-- Core JS -->
-    <?php include('./Pages/js.php');?>
+    <?php include('./VIEW/Pages/js.php');?>
   </body>
 </html>
