@@ -4,6 +4,10 @@
      <?php include ('./view/page/head.php') ?>
 		</head>
 		<body>	
+			<?php 
+			echo var_dump($_SERVER);
+			die();
+			?>
 			  <header id="header">
 			  <?php include ('./view/page/header.php') ?>
 			  </header><!-- #header -->
