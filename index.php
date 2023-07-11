@@ -1,22 +1,36 @@
 <?php
-include_once('./models/init_db.php');
-// Vérification de l'authentification
+// Vérification de l'authentification de l'utilisateur
+
+// Démarrage de la session
 session_start();
 
-//$GET['paths'] = $paths;
+// echo (!isset($_SESSION['username']) && !isset($_COOKIE['user_login']));
 
-if (!isset($_SESSION['username']) && !isset($_COOKIE['user_login'])) {
-  // Utilisateur non authentifié, redirection vers la page de connexion
-  require_once('./controllers/front/index.php');
-  exit();
+// Si l'utilisateur n'est pas authentifié
+if (!isset($_SESSION['mail']) && !isset($_COOKIE['user_login'])) {
+    // Utilisateur non authentifié, redirection vers la page de connexion
+    switch ($_GET['page'] ?? 'home') {
+        case 'connexion':
+            include('connexion.php');
+            break;
+        case 'home':
+            include('home.php');
+            break;
+        default:
+            include('home.php');
+            break;
+    }
+    exit();
 }
-
-// Utilisateur authentifié, vous pouvez accéder aux détails de l'utilisateur à partir de la session ou du cookie
-else if (isset($_SESSION['username'])) {
-   echo "Bienvenue " . $_SESSION['username'];
-   //require_once('./controllers/admin/index.php');
+if (isset($_SESSION['mail'])) {
+    $mail = $_SESSION['mail'];
+    // Redirection vers une page protégée
+    header("Location: back/index.php?app=back&page=list");
+    exit();
+} else if (isset($_COOKIE['user_login'])) {
+    $mail = $_COOKIE['user_login'];
+    // Redirection vers une page protégée
+    header("Location: back/index.php?app=back&page=list");
+    exit();
 }
-
-
-
 ?>
